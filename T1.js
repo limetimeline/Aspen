@@ -1287,14 +1287,14 @@ function fn_onDragEnd($label) {
         "ease 300ms"
       );
       if (inputAns.inputDragId < 0) {
-        wgt.set(dragInfoArr[curIndex].widget, "visibility", "hidden");
+        // wgt.set(dragInfoArr[curIndex].widget, "visibility", "hidden");
       } else {
         wgt.set(
           dragInfoArr[inputAnsArr[i].inputDragId].widget,
           "visibility",
           "visible"
         );
-        wgt.set(dragInfoArr[curIndex].widget, "visibility", "hidden");
+        // wgt.set(dragInfoArr[curIndex].widget, "visibility", "hidden");
       }
       inputAnsArr[i].inputDragId = curIndex;
       //console.error('inputAnsArr[i].widget label ', wgt.get(inputAnsArr[i].layer, 'label'));
